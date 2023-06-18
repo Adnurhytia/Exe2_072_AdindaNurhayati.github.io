@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>The Wings Tour</h1>
+            <h2>Ticket</h2>
+        </div>
+        <form action="">
+            <label for="name">Name</label><br>
+            <input type="text" placeholder="Your name" id="name"><br><br>
+
+            <label for="date">Tanggal:</label>
+            <input type="date" id="date" name="date" min="2023-01-01" max="2023-12-31" value="2023-06-18"><br><br>
+
+            <label for="gender">Sex:</label><br>
+            <select name="gender" id="gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="None">None</option>
+            </select><br><br>
+
+            <p>Seat:</p>
+            <input type="radio" name="seat" id="VIP" value="VIP">
+            <label for="VIP">VIP</label> <br>
+            <input type="radio" name="seat" id="Platinum" value="Platinum">
+            <label for="Platinum">Platinum</label> <br>
+            <input type="radio" name="seat" id="Cat1" value="Cat1">
+            <label for="Cat1">Cat 1</label> <br>
+            <input type="radio" name="seat" id="Cat2" value="Cat2">
+            <label for="Cat2">Cat 2</label> <br>
+            <input type="radio" name="seat" id="Cat3" value="Cat3">
+            <label for="Cat3">Cat 3</label> <br>
+            <input type="radio" name="seat" id="Cat4" value="Cat4">
+            <label for="Cat4">Cat 4</label> <br><br>
+
+            <label for="address">Full Address:</label><br>
+            <textarea placeholder="Enter Your Address" name="address" id="address" cols="30" rows="5"></textarea><br><br>
+
+            <button type="submit" onclick="sendData()">Send</button>
+        </form>
+    </div>
+    <script src="form.js"></script>
+</body>
+
+</html>
